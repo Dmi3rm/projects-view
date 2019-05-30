@@ -1,0 +1,29 @@
+{
+  "ProjectTop": { "cru": "Проекты", "cen": "Projects" },
+  "SkillsTop": { "cru": "Навыки", "cen": "Skills" },
+  "ContactsTop": { "cru": "Контакты", "cen": "Contacts" },
+  "FIO": { "cru": "Дмитрий Румянцев", "cen": "Dmi3y.Rumyantsev" },
+  "MyProjects": { "cru": "Проекты", "cen": "Projects" },
+  "Graphs3D": { "cru": "3D Графики", "cen": "3D Graphs" },
+  "Graphs3DDescr": {
+    "cru": "Построение графиков в 3D пространстве. Аппроксимация дифф. уравнений.",
+    "cen": "Drawing graphs in 3D space. Approximation of diff. equations."
+  },
+  "LogicSchemesName": { "cru": "Логические схемы", "cen": "Logic schemes" },
+  "LogicSchemesDescr": {
+    "cru": "Создание и исполнение логических схем.",
+    "cen": "Building and executing logic schemes."
+  },
+  "GalaxyWarsName": { "cru": "Отстоять космос", "cen": "Defend the space" },
+  "GalaxyWarsDescr": {
+    "cru": "Защитить мир от инопланетных захватчиков.",
+    "cen": "Protect the world from the invaders."
+  },
+  "FindMoreGit": {
+    "cru": "Исходники на",
+    "cen": "Sources at "
+  },
+  "ContactMe": { "cru": "Связаться со мной", "cen": "Contact me" },
+  "Via": { "cru": "По", "cen": "Via" },
+  "Or": { "cru": "или", "cen": "or" }
+}

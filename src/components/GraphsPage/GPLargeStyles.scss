@@ -1,0 +1,34 @@
+@import 'gpvalues';
+
+$windowPadding: 13px;
+
+.nav {
+  display: none;
+}
+
+#Menu {
+    width:300px;
+    flex-shrink: 0;
+    padding: $windowPadding 0 $windowPadding $windowPadding;
+}
+
+#compHeader {
+    background:$headerColor;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+#headText {
+    font-size:25px;
+    flex-grow: 1;
+    margin-left: $headerLeftMargin;
+}
+
+#compHeader a {
+  margin-right: $headerLeftMargin;
+}
+
+#GraphField {
+    flex-grow: 1;
+    padding: $windowPadding;
+}

@@ -1,0 +1,66 @@
+@import '~@/assets/css/common';
+
+$modalHeaderBgColor: $appsBgColor;
+$modalHeaderColor: black;
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: $modalHeaderBgColor;
+    color: $modalHeaderColor;
+    float:left;
+    width:100%;
+    font-family: $gameFont;
+}
+
+.modal-footer {
+    background-color: $modalHeaderBgColor;
+    color: $modalHeaderColor;
+    font-family: $gameFont;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Lora', serif;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}

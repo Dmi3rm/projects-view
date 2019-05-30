@@ -1,0 +1,99 @@
+@import '~@/assets/css/common';
+
+$buttonColor: black;
+$buttonBgColor: red;
+
+body {
+  font-family: $gameFont !important;
+}
+
+.Dialog {
+    background-color: #e9f3e9;
+    display: none;
+    min-height: 200px;
+    min-width: 300px;
+    border: 1px solid orange;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}
+
+.DialogTitle {
+    width: 100%;
+    background-color: orange;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#NumObjectsInput {
+    width: 30px;
+}
+
+img {
+    display: none;
+}
+
+#screen {
+    border: 1px solid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+button {
+  background-color: $buttonBgColor;
+  color:$buttonColor;
+  border: none;
+  cursor:pointer;
+}
+
+#startBtn {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+}
+
+#restartBtn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#fullScreenBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+#settingsBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    background-color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+$modalHeaderBgColor: red;
+$modalHeaderColor: black;
+.modal-header {
+    background-color: $modalHeaderBgColor;
+    color: $modalHeaderColor;
+}
+
+.modal-footer {
+    background-color: $modalHeaderBgColor;
+    color: $modalHeaderColor;
+}

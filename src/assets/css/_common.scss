@@ -1,0 +1,10 @@
+@font-face {
+	font-family:'TWRegular';
+	src:url(~@/assets/fonts/TCCEB.ttf);
+	font-weight:normal;
+	font-style:normal;
+}
+
+$gameFont: "TWRegular";
+$buttonColor: green;
+$appsBgColor: #F4FF96;

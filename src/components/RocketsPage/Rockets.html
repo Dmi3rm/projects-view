@@ -1,0 +1,48 @@
+﻿<html style="width:100%; height:100%; overflow:hidden;">
+<head>
+    <title>DEFEND THE SPACE</title>
+    <link rel="icon" href="static/img/RocketsPage/Dron.png" />
+</head>
+<body id="body" style="width: 100%; height: 100%; overflow: hidden;">
+    <button id="startBtn">JOIN THE GAME</button>
+    <button id="restartBtn">GET A NEW ROCKET</button>
+    <button id="fullScreenBtn">HOME</button>
+    <i id="settingsBtn" class="fa fa-cog" data-toggle="modal" href="#myModal"></i>
+
+    <canvas id="screen"></canvas>
+    <img src="static/img/RocketsPage/Rocket.png" id="rocket" />
+    <img src="static/img/RocketsPage/Dron.png" id="dron" />
+    <img src="static/img/RocketsPage/Heart.png" id="heart" />
+    <img src="static/img/RocketsPage/Three.png" id="three" />
+    <img src="static/img/RocketsPage/Meteor.png" id="meteor" />
+    <img src="static/img/RocketsPage/Vzryv.png" id="vzryv" />
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SETTINGS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-height:400px; overflow-y:auto;">
+                  <center>W - вперед</center>
+                  <center>A - влево</center>
+                  <center>D - вправо</center>
+                  <center>S - тормоз</center>
+                  <center>Space - стрельба</center>
+                  <center>
+                      <label>Макс. число объектов на экране:</label>
+                      <input id="NumObjectsInput" maxlength="2" />
+                  </center>
+                  <center><button id="NumObjectsBtn">APPLY</button></center>
+                </div>
+                <div class="modal-footer">
+                    <span>November 2014</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

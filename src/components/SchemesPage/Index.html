@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logic Scheme Builder</title>
+    <link rel="icon" href="static/img/SchemesPage/NotElem.png" />
+</head>
+
+<body>
+	<menu id="menuPanel">
+ 		<ul class="menu" style="float:left;">
+        <li>
+        	<a href="#">Mode</a>
+            <ul>
+            	<li><a id="add" href="#">Add</a></li>
+                <li><a id="change" href="#">Setting</a></li>
+            </ul>
+        </li>
+
+        <li>
+        	<a href="#">Scale</a>
+            <ul>
+            	<li><a id="small" href="#">Small</a></li>
+                <li><a id="middle" href="#">Middle</a></li>
+                <li><a id="large" href="#">Large</a></li>
+            </ul>
+        </li>
+
+        <li>
+        	<a id="helpBtn"  data-toggle="modal" href="#helpModal">Help</a>
+        </li>
+    	</ul>
+        <i class="fa fa-times" id="closeBtn" onclick="document.location.href='/'"></i>
+    </menu>
+
+    <section id="workingPanel">
+    	<div id="instruments">
+        	<label id="InstrLabel">INSTRUMENTS</label>
+            <ul>
+            	<li><img id="AndBtn" src="static/img/SchemesPage/AndElem.png" height="30" width="30" /></li>
+              <li><img id="OrBtn" src="static/img/SchemesPage/OrElem.png" height="30" width="30" /></li>
+				      <li><img id="NotBtn" src="static/img/SchemesPage/NotElem.png" height="30" width="30" /></li>
+            </ul>
+        </div>
+        <div id="appRun">
+        	<label>Application</label>
+            <ul>
+            	<li><img id="RunBtn" src="static/img/SchemesPage/Run.png" height="30" width="30" /></li>
+                <li><img id="StepBtn" src="static/img/SchemesPage/Step.png" height="30" width="30" /></li>
+				        <li><img id="RestartBtn" src="static/img/SchemesPage/Restart.png" height="30" width="30" /></li>
+            </ul>
+        </div>
+
+
+        <div class="modal fade" id="helpModal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Logic Scheme Builder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="max-height:400px; overflow-y:auto;">
+                        <p>Приложение позволяет строить и исполнять логические цепочки.</p>
+                        <p>Поддерживаются 3 логических элемента:</p>
+                        <ul style="margin-bottom:10px;">
+                            <li style="margin-left:10px;"><img src="static/img/SchemesPage/AndElem.png" height="30" width="30" /> - ИЛИ (OR)</li>
+                            <li style="margin-left:30px;"><img src="static/img/SchemesPage/OrElem.png" height="30" width="30" /> - И (AND)</li>
+                            <li style="margin-left:30px;"><img src="static/img/SchemesPage/NotElem.png" height="30" width="30" /> - НЕ (NOT)</li>
+                        </ul>
+                        <p>Для добавления элемента в схему следует нажать на его изображение на панели управления, после чего кликнуть на поле - элемент появится под курсором.</p>
+                        <p>Например, добавим на поле элементы НЕ и ИЛИ. Чтобы приступить к настройке схемы, в меню приложения нажимаем Mode -> Setting.</p>
+                        <img src="static/img/SchemesPage/scheme1.png" style="max-width:60%;"/>
+                        <p>Для перемещения элемента по полю, зажмите курсор в его центре и потяните в нужное место. Переместите элемент в правый верхний угол для его удаления.
+                            <br />Кликните по входу элемента, чтобы изменить его начальное значение.
+                            <br />Зажмите курсор на выходе элемента, потяните на вход другого и отпустите для создания логической связи. Кликните по линии связи чтобы ее удалить.
+                        </p>
+                        <p>
+                            Для управления выполнением схемы на панели управления есть 3 кнопки:
+                            <br />- выполнить схему до конца;
+                            <br />- выполнить только следующий шаг;
+                            <br />- откатить схему к начальным значениям.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <span>December 2014</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workingPlace">
+        <canvas id="logicField">
+
+        </canvas>
+    </section>
+
+    <section id="Reserv">
+        <img src="static/img/SchemesPage/AndElem.png"  id="AndElem" />
+        <img src="static/img/SchemesPage/OrElem.png" id="OrElem" />
+        <img src="static/img/SchemesPage/NotElem.png" id="NotElem"  />
+        <img src="static/img/SchemesPage/One.png" id="One" />
+        <img src="static/img/SchemesPage/Zero.png" id="Zero" />
+        <img src="static/img/SchemesPage/Question.png" id="Question" />
+        <img src="static/img/SchemesPage/Rubbish.png" id="Rubbish" />
+    </section>
+</body>
+</html>
